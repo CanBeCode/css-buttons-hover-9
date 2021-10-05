@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        @import url("https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css");
+        *,
+         ::before,
+         ::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #btn {
+            background: hsl(226deg 46% 53%);
+            padding: 26px 26px 26px 1px;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 200;
+            position: relative;
+            transition: all 0.3s;
+            color: #fff;
+            box-shadow: 0px -10px 28px #1c1b1b82;
+            overflow: hidden;
+            border-radius: 50px;
+        }
+        
+        #btn span {
+            position: relative;
+            width: 0px;
+            display: inline-block;
+            opacity: 0;
+            visibility: hidden;
+            white-space: nowrap;
+        }
+        
+        #btn i {
+            margin-left: 18px;
+            z-index: 2;
+            position: relative;
+        }
+        
+        #btn:hover {
+            padding: 26px 26px 26px 41px;
+            background: hsl(226deg 55% 48%);
+        }
+        
+        #btn:hover span {
+            position: relative;
+            width: auto;
+            display: inline-block;
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+    <a href="#" id="btn">
+        <span>Button Style</span>
+        <i class='bx bxs-home'></i>
+    </a>
+</body>
+
+</html>
